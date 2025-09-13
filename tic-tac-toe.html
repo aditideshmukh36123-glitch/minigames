@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe ❌⭕</title>
+  <link rel="stylesheet" href="games.css">
+</head>
+<body>
+  <h1>Tic Tac Toe ❌⭕</h1>
+
+  <!-- Scoreboard -->
+  <div id="scoreboard">
+    <span id="playerXScore">X: 0</span>
+    <span id="playerOScore">O: 0</span>
+    <span id="drawScore">Draws: 0</span>
+  </div>
+
+  <!-- Mode & Emoji Options -->
+  <div id="controls">
+    <select id="modeSelect">
+      <option value="pvp">Player vs Player</option>
+      <option value="pvc">Player vs Computer</option>
+    </select>
+    <select id="emojiSelect">
+      <option value="XO">❌⭕</option>
+      <option value="catDog">🐱🐶</option>
+      <option value="sunMoon">🌞🌛</option>
+    </select>
+  </div>
+
+  <div id="ticTacToe" class="board"></div>
+  <p id="status"></p>
+  <button onclick="resetGame()">Restart</button>
+  <br><br>
+  <a href="../index.html">⬅ Back</a>
+
+  <!-- Champion Overlay -->
+  <div id="championMessage"></div>
+
+  <!-- Sounds -->
+  <audio id="clickSound" src="sounds/click.mp3"></audio>
+  <audio id="winSound" src="sounds/win.mp3"></audio>
+
+  <script src="tic-tac-toe.js"></script>
+</body>
+</html>
