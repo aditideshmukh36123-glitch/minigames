@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Games Hub 🎮</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Floating Particles Background -->
+  <canvas id="bgParticles"></canvas>
+
+  <div class="container">
+    <header>
+      <h1>🎮 Mini Games Hub</h1>
+    </header>
+
+    <!-- Chatbot Section -->
+    <div class="chatbot">
+      <div class="avatar">🤖</div>
+      <div class="chatbox">
+        <p id="chatMessage"></p>
+      </div>
+    </div>
+
+    <!-- Game Selection -->
+    <div class="game-menu">
+      <button class="game-card" onclick="selectGame('games/tic-tac-toe.html')">Tic Tac Toe ❌⭕</button>
+      <button class="game-card" onclick="selectGame('games/memory.html')">Memory Game 🃏</button>
+      <button class="game-card" onclick="selectGame('games/whack-a-mole.html')">Whack-a-Mole 🐹</button>
+    </div>
+
+
+    
+  </div>
+
+  <script src="chatbot.js"></script>
+  <script src="particles.js"></script>
+</body>
+</html>
